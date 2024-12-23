@@ -5,6 +5,8 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [MainController::class, 'index'])->name('home');
+Route::get('/doc', [MainController::class, 'doc'])->name('doc');
+Route::get('/letter', [MainController::class, 'letter'])->name('letter');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

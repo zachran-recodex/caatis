@@ -15,6 +15,9 @@
         </form>
         <!-- Sidebar Menu -->
         <ul class="sidebar-menu" data-widget="tree">
+            <li class="{{ Request::is('/doc') ? 'active' : '' }}">
+                <a href="{{ route('doc') }}" style="color: #FFF"><i class="fa fa-file"></i><span>Upload Surat</span></a>
+            </li>
             <li class="treeview {{ Request::is('admin/advanced*') ? 'active' : '' }}">
                 <a href="#" style="color: #FFF">
                     <i class="fa fa-file"></i>
@@ -24,8 +27,8 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li class="{{ Request::is('admin/advanced/settings*') ? 'active' : '' }}">
-                        <a href="" style="color: #FFF"><span>Surat Permohonan Beasiswa</span></a>
+                    <li class="{{ Request::is('/letter*') ? 'active' : '' }}">
+                        <a href="{{ route('letter') }}" style="color: #FFF"><span>Surat Permohonan Beasiswa</span></a>
                     </li>
                     <li class="{{ Request::is('admin/advanced/custom-fields*') ? 'active' : '' }}">
                         <a href="" style="color: #FFF"><span>Surat Permohonan Izin</span></a>
