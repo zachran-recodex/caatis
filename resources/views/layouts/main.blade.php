@@ -27,19 +27,19 @@
 
             <!-- Logo -->
             <a href="{{ route('home') }}" class="hidden-xs logo">
-                <span class="logo-mini"><b>C</b></span>
-                <span class="logo-lg"><b>CAATIS</b></span>
+                <span class="logo-mini"><img src="{{ asset('images/1.png') }}" alt="image"></span>
+                <span class="logo-lg"><img src="{{ asset('images/2.png') }}" alt="image"></span>
             </a>
 
             <!-- Header Navbar -->
             <nav class="navbar navbar-static-top" role="navigation">
                 <!-- Sidebar toggle button-->
-                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button" style="color: #000000">
                     <span class="sr-only">Toggle navigation</span>
                 </a>
 
                 <span style="display: inline-block;width: 71vw;text-align: center;font-size: 20px;line-height: 50px;color: white;" class="visible-xs-inline-block">
-                    <b>CAATIS</b>
+                    <b>{{ asset('images/2.png') }}</b>
                 </span>
                 <!-- Navbar Right Menu -->
                 <div class="navbar-custom-menu">
@@ -49,13 +49,13 @@
                             <!-- Menu Toggle Button -->
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <!-- The user image in the navbar-->
-                                <img src=""
+                                <img src="{{ asset('images/1.png') }}"
                                      class="user-image" alt="User Image"/>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- The user image in the menu -->
                                 <li class="user-header">
-                                    <img src=""
+                                    <img src="{{ asset('images/1.png') }}"
                                          class="img-circle" alt="User Image"/>
                                 </li>
                             </ul>

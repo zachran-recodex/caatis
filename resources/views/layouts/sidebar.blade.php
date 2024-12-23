@@ -14,15 +14,66 @@
             </div>
         </form>
         <!-- Sidebar Menu -->
-
         <ul class="sidebar-menu" data-widget="tree">
-            <li class="{{ Request::is('/home*') ? 'active' : '' }}">
-                <a href="{!! route('home') !!}"><i class="fa fa-home"></i><span>Home</span></a>
-            </li>
-            <li class="{{ Request::is('documents*') ? 'active' : '' }}">
-                <a href="">
-                    <i class="fa fa-file"></i><span>Documents</span>
+            <li class="treeview {{ Request::is('admin/advanced*') ? 'active' : '' }}">
+                <a href="#" style="color: #FFF">
+                    <i class="fa fa-file"></i>
+                    <span>Surat Permohonan</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
                 </a>
+                <ul class="treeview-menu">
+                    <li class="{{ Request::is('admin/advanced/settings*') ? 'active' : '' }}">
+                        <a href="" style="color: #FFF"><span>Surat Permohonan Beasiswa</span></a>
+                    </li>
+                    <li class="{{ Request::is('admin/advanced/custom-fields*') ? 'active' : '' }}">
+                        <a href="" style="color: #FFF"><span>Surat Permohonan Izin</span></a>
+                    </li>
+                    <li class="{{ Request::is('admin/advanced/file-types*') ? 'active' : '' }}">
+                        <a href="" style="color: #FFF"><span>Surat Permohonan Magang</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="treeview {{ Request::is('admin/advanced*') ? 'active' : '' }}">
+                <a href="#" style="color: #FFF">
+                    <i class="fa fa-file"></i>
+                    <span>Surat Rekomendasi</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="{{ Request::is('admin/advanced/settings*') ? 'active' : '' }}">
+                        <a href="" style="color: #FFF"><span>Surat Rekomendasi Dosen</span></a>
+                    </li>
+                    <li class="{{ Request::is('admin/advanced/custom-fields*') ? 'active' : '' }}">
+                        <a href="" style="color: #FFF"><span>Surat Rekomendasi Kerja</span></a>
+                    </li>
+                    <li class="{{ Request::is('admin/advanced/file-types*') ? 'active' : '' }}">
+                        <a href="" style="color: #FFF"><span>Surat Rekomendasi Beasiswa</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="treeview {{ Request::is('admin/advanced*') ? 'active' : '' }}">
+                <a href="#" style="color: #FFF">
+                    <i class="fa fa-file"></i>
+                    <span>Surat Keterangan</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="{{ Request::is('admin/advanced/settings*') ? 'active' : '' }}">
+                        <a href="" style="color: #FFF"><span>Surat Keterangan</span></a>
+                    </li>
+                    <li class="{{ Request::is('admin/advanced/custom-fields*') ? 'active' : '' }}">
+                        <a href="" style="color: #FFF"><span>Surat Keterangan</span></a>
+                    </li>
+                    <li class="{{ Request::is('admin/advanced/file-types*') ? 'active' : '' }}">
+                        <a href="" style="color: #FFF"><span>Surat Keterangan</span></a>
+                    </li>
+                </ul>
             </li>
         </ul>
         <!-- /.sidebar-menu -->
